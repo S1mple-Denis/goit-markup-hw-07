@@ -842,28 +842,24 @@ img {
   transition: fill 250ms var(--transition-cubic);
 }
 /* страница портфолио */
-.portfolio-main {
+.portfolio {
   background-color: var(--white-text-colour);
 }
 
-.main-list {
+.portfolio__list {
   display: flex;
   justify-content: center;
 }
 
-.main-list-projects {
-  margin-top: 50px;
-}
-
-.main-list-item {
+.portfolio__item {
   margin-right: 8px;
 }
 
-.main-list-item:last-child {
+.portfolio__item:last-child {
   margin-right: 0;
 }
 
-.main-list button {
+.portfolio__list button {
   padding: 6px 22px;
   color: var(--title-text-color);
   background-color: var(--bg-button-portfolio);
@@ -877,14 +873,15 @@ img {
   border: none;
 }
 
-.main-list button:hover,
-.main-list button:focus {
+.portfolio__list button:hover,
+.portfolio__list button:focus {
   color: var(--white-text-colour);
   background-color: var(--accent-colour);
   transition: fill 250ms var(--transition-cubic);
 }
 
-.main-list-projects {
+.projects {
+  margin-top: 50px;
   display: flex;
   flex-wrap: wrap;
 }
@@ -893,17 +890,17 @@ a {
   text-decoration: none;
 }
 
-.main-list-projects-items {
+.projects__items {
   width: 370px;
   margin-right: 30px;
   margin-bottom: 30px;
 }
 
-.cards-overlay {
+.projects__overlay {
   position: relative;
   overflow: hidden;
 }
-.overlay {
+.projects__title {
   position: absolute;
   top: 0;
   left: 0;
@@ -918,42 +915,42 @@ a {
   color: #ffffff;
   transition: transform 250ms ease;
 }
-.main-list-cards:hover .overlay {
+.projects__cards:hover .projects__title {
   transform: translateY(0%);
   background-color: rgba(33, 150, 243, 0.9);
   transition: transform 250ms ease;
 }
 
-.main-list-projects-items:nth-child(3n) {
+.projects__items:nth-child(3n) {
   margin-right: 0;
 }
 
-.main-list-projects-items:nth-last-child(-n + 3) {
+.projects__items:nth-last-child(-n + 3) {
   margin-bottom: 0;
 }
 
-.main-list-cards:hover,
-.main-list-cards:focus {
+.projects__cards:hover,
+.projects__cards:focus {
   display: block;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
   transition: fill 250ms var(--transition-cubic);
 }
 
-.main-list-projects-items:hover,
-.main-list-projects-items:focus {
+.projects__items:hover,
+.projects__items:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
   transition: fill 250ms var(--transition-cubic);
 }
 
-.main-project-naming {
+.project__naming {
   padding: 20px 24px;
   border-bottom: 1px solid var(--border-portfolio);
   border-left: 1px solid var(--border-portfolio);
   border-right: 1px solid var(--border-portfolio);
 }
-.main-project-name {
+.project__name {
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 18px;
