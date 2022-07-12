@@ -1,9 +1,25 @@
 @import "./vars";
 @import "./base/reset";
-@import "./layout/body";
-@import "./components/container";
+@import "./base/common";
+
+@import "./components/button";
+@import "./components/main-nav";
+@import "./components/subscribe";
+@import "./components/social-links";
+@import "./components/modal";
+
+
 @import "./layout/header";
 @import "./layout/hero";
+@import "./layout/prefences";
+@import "./layout/about";
+@import "./layout/our-team";
+@import "./layout/clients";
+@import "./layout/futer";
+
+
+
+
 
 
 
