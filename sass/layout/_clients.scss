@@ -15,10 +15,9 @@
 
 .client__item {
     margin-right: 30px;
-}
-
-.client__item:last-child {
+&:last-child {
     margin-right: 0;
+        }
 }
 
 .clients__card {
@@ -29,19 +28,18 @@
     align-items: center;
     border: 1px solid #afb1b8;
     border-radius: 4px;
+    &:hover {
+        border: 1px solid #2196f3;
+        fill: #2196f3;
+        transition: fill 250ms var(--transition-cubic);
+        }
 }
 
 .clients__logo {
     fill: #afb1b8;
+    .clients__card:hover & {
+            fill: #2196f3;
+            transition: fill 250ms var(--transition-cubic);
+        }
 }
 
-.clients__card:hover {
-    border: 1px solid #2196f3;
-    fill: #2196f3;
-    transition: fill 250ms var(--transition-cubic);
-}
-
-.clients__card:hover .clients__logo {
-    fill: #2196f3;
-    transition: fill 250ms var(--transition-cubic);
-}

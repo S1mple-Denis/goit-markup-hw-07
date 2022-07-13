@@ -19,10 +19,9 @@
     color: var(--bg-page-colour);
     background-color: var(--accent-colour);
     cursor: pointer;
-}
-
-.hero-page__button:hover,
-.hero-page__button:focus {
+    &:hover,
+    &:focus {
     background-color: var(--bg-button-hover);
     transition: fill 250ms var(--transition-cubic);
+}
 }

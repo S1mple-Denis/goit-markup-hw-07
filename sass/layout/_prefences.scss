@@ -6,10 +6,9 @@
 .prefences__item {
     width: 270px;
     margin-right: 30px;
-}
-
-.prefences__item:last-child {
-    margin-right: 0;
+    &:last-child {
+        margin-right: 0;
+        }
 }
 
 .prefences__title {

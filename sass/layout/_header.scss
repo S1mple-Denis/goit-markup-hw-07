@@ -28,6 +28,10 @@
     font-size: 26px;
     line-height: 1.19;
     text-decoration: none;
+    &:hover {
+        color: var(--accent-colour);
+        transition: fill 250ms var(--transition-cubic);
+        }
 }
 
 .main-nav__logotext {
@@ -39,8 +43,5 @@
     text-decoration: none;
 }
 
-.main-nav__logo:hover {
-    color: var(--accent-colour);
-    transition: fill 250ms var(--transition-cubic);
-}
+
 

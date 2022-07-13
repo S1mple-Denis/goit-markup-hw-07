@@ -25,15 +25,13 @@
     justify-content: center;
     align-items: center;
     background-color: rgba(255, 255, 255, 0.1);
-}
-
-.social-links__item:last-child {
-    margin-right: 0;
-}
-
-.social-links__item:hover {
-    background-color: #2196f3;
-    transition: fill 250ms var(--transition-cubic);
+    &:hover {
+        background-color: #2196f3;
+        transition: fill 250ms var(--transition-cubic);
+        }
+    &:last-child {
+        margin-right: 0;
+        }
 }
 
 .social-links__link {

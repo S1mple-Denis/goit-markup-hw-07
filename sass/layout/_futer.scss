@@ -14,14 +14,6 @@
     letter-spacing: 0.03em;
 }
 
-.futer__logo:hover,
-.futer__adress:hover,
-.futer__link:hover,
-.futer__link:focus {
-    color: var(--accent-colour);
-    transition: fill 250ms var(--transition-cubic);
-}
-
 .futer a {
     display: inline-block;
     text-decoration: none;
@@ -34,7 +26,11 @@
     letter-spacing: 0.03em;
     color: var(--white-text-colour);
     line-height: 1.71;
-}
+    &:hover {
+        color: var(--accent-colour);
+        transition: fill 250ms var(--transition-cubic);
+        }
+    }
 
 .futer__logo {
     color: var(--white-text-colour);
@@ -44,6 +40,10 @@
     line-height: 1.19;
     text-decoration: none;
     letter-spacing: 0.03em;
+    &:hover {
+            color: var(--accent-colour);
+            transition: fill 250ms var(--transition-cubic);
+        }
 }
 
 .futer__link {
@@ -52,8 +52,12 @@
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--futer-mail-tel);
+    &:hover,
+    &:focus {
+            color: var(--accent-colour);
+            transition: fill 250ms var(--transition-cubic);
+        }
 }
-
 .container.futer {
     display: flex;
     align-items: baseline;

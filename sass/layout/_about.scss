@@ -43,12 +43,10 @@
 
 .about__item {
     margin-right: 30px;
-}
-
-.about__item:last-child {
+&:last-child {
     margin-right: 0;
+    }
 }
-
 img {
     display: block;
     max-width: 100%;

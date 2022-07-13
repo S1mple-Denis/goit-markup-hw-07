@@ -28,12 +28,11 @@
     outline: none;
     padding-left: 12px;
     color: rgba(255, 255, 255, 0.6);
-}
-
-.submit-input:hover,
-.submit-input:focus {
-    border-color: var(--accent-colour);
-    transition: fill 250ms var(--transition-cubic);
+    &:hover,
+    &:focus {
+        border-color: var(--accent-colour);
+        transition: fill 250ms var(--transition-cubic);
+        }
 }
 
 .futer-subscribe__button {
@@ -53,23 +52,21 @@
     padding-left: 29px;
     color: #ffffff;
     fill: currentColor;
+    &:hover,
+    &:focus {
+        background-color: var(--bg-page-colour);
+        color: var(--accent-colour);
+        transition: fill 250ms var(--transition-cubic);
+        }
 }
-
-.futer-subscribe__button:hover,
-.futer-subscribe__button:focus {
-    background-color: var(--bg-page-colour);
-    color: var(--accent-colour);
-    transition: fill 250ms var(--transition-cubic);
-}
-
 .futer-subscribe__send {
     position: absolute;
     background-size: contain;
     right: 28px;
     margin-left: 10px;
+    .futer-subscribe__button:hover+& {
+            fill: var(--accent-colour);
+            transition: fill 250ms var(--transition-cubic);
+        }
 }
 
-.futer-subscribe__button:hover+.futer-subscribe__send {
-    fill: var(--accent-colour);
-    transition: fill 250ms var(--transition-cubic);
-}
