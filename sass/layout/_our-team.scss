@@ -62,13 +62,15 @@
     align-items: center;
     border-radius: 50%;
     fill: #afb1b8;
+    transition: fill 250ms var(--transition-cubic), background-color 250ms var(--transition-cubic);
     &:hover {
         background-color: #2196f3;
         fill: #fff;
-        transition: fill 250ms var(--transition-cubic);
         }
+}
+.our-team__sl-logo {
+    transition: fill 250ms var(--transition-cubic);
 }
 .our-team__sl-logo:hover {
     fill: #fff;
-    transition: fill 250ms var(--transition-cubic);
 }

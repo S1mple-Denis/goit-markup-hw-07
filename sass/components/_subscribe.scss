@@ -28,10 +28,10 @@
     outline: none;
     padding-left: 12px;
     color: rgba(255, 255, 255, 0.6);
+    transition: border-color 250ms var(--transition-cubic);
     &:hover,
     &:focus {
         border-color: var(--accent-colour);
-        transition: fill 250ms var(--transition-cubic);
         }
 }
 
@@ -52,11 +52,11 @@
     padding-left: 29px;
     color: #ffffff;
     fill: currentColor;
+    transition: color 250ms var(--transition-cubic), background-color 250ms var(--transition-cubic);
     &:hover,
     &:focus {
         background-color: var(--bg-page-colour);
         color: var(--accent-colour);
-        transition: fill 250ms var(--transition-cubic);
         }
 }
 .futer-subscribe__send {
@@ -64,9 +64,9 @@
     background-size: contain;
     right: 28px;
     margin-left: 10px;
+    transition: fill 250ms var(--transition-cubic);
     .futer-subscribe__button:hover+& {
             fill: var(--accent-colour);
-            transition: fill 250ms var(--transition-cubic);
         }
 }
 

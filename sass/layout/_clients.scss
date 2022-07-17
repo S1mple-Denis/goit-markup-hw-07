@@ -28,18 +28,18 @@
     align-items: center;
     border: 1px solid #afb1b8;
     border-radius: 4px;
+    transition: fill 250ms var(--transition-cubic), border 250ms var(--transition-cubic);
     &:hover {
         border: 1px solid #2196f3;
         fill: #2196f3;
-        transition: fill 250ms var(--transition-cubic);
         }
 }
 
 .clients__logo {
     fill: #afb1b8;
+    transition: fill 250ms var(--transition-cubic);
     .clients__card:hover & {
             fill: #2196f3;
-            transition: fill 250ms var(--transition-cubic);
         }
 }
 

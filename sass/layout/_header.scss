@@ -28,9 +28,9 @@
     font-size: 26px;
     line-height: 1.19;
     text-decoration: none;
+    transition: color 250ms var(--transition-cubic);
     &:hover {
         color: var(--accent-colour);
-        transition: fill 250ms var(--transition-cubic);
         }
 }
 

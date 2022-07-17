@@ -42,11 +42,13 @@
 .main-nav__item {
     position: relative;
 }
+.main-nav__link {
+transition: color 250ms var(--transition-cubic);
+}
 
 .main-nav__link:hover,
 .main-nav__link:focus {
     color: var(--accent-colour);
-    transition: fill 250ms var(--transition-cubic);
 }
 
 .main-nav__list .link.current {
